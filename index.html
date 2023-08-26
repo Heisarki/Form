@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+        h2 {
+            font-size: 64px;
+            font-weight: 300;
+        }
+        input {
+            height: 40px;
+            font-size: 24px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid white;
+        }
+        button {
+            background-color: white;
+            color: black;
+            width: 226px;
+            height: 58px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        button:hover {
+            transform: translateX(1px);
+        }
+        button:focus {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <header
+        style = "
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+        padding: 0 60px;
+        border-bottom: 1px solid white;
+        "
+    >
+        <h1>Header</h1>
+        <div
+        style = "
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            "
+        >
+            <h1>Signup</h1>
+            <h1>Profile</h1>
+        </div>
+    </header>
+    <section 
+        style="
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        flex-direction: column;
+        "
+    >
+        <div
+            style="
+                display: flex;
+                gap: 50px;
+                flex-direction: column;
+                width: 80vw;
+                "
+        >
+            <h2>Signup</h2>
+            <form
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                "
+            >
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+            </form>
+            <div
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                "
+            >
+                <h1 style="color: #FF4F4F;">Error: All the fields are mandatory</h1>
+                <h1 style="color: #7ECD71;">Successfully Signed Up!</h1>
+            </div>
+            <button>Signup</button>
+        </div>
+    </section>
+</body>
+</html>
